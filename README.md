@@ -1,79 +1,53 @@
-# Documentação de Criação de Instância de Banco de Dados na Azure
+# Documentação: Criação de Instância de Banco de Dados na Microsoft Azure
 
-Este repositório contém a documentação completa do processo de criação de uma instância de banco de dados na plataforma Microsoft Azure. O objetivo é relatar passo a passo a experiência prática, incluindo instruções, observações e capturas de tela do procedimento.
+Este repositório tem como objetivo documentar o processo de criação e configuração de uma instância de banco de dados na plataforma Microsoft Azure. A atividade faz parte de um laboratório prático para fixar os conceitos estudados e servir como material de apoio para futuras implementações.
 
-## 📌 Objetivo
+## 🧠 Objetivo do Projeto
 
-Demonstrar o processo de provisionamento de um banco de dados na Azure, compreendendo:
+- Aplicar conceitos de computação em nuvem em um ambiente prático
+- Utilizar a Microsoft Azure para provisionar uma instância de banco de dados
+- Documentar o processo de forma clara e reutilizável
+- Utilizar o GitHub como ferramenta de versionamento e compartilhamento de conhecimento técnico
 
-- Escolha do tipo de banco de dados (ex: SQL Database)
-- Criação da instância
-- Configuração básica
-- Acesso ao banco
-- Considerações de segurança e escalabilidade
+## ⚙️ Etapas Esperadas (Baseadas nas Aulas)
 
-## 🧰 Pré-requisitos
+1. **Acesso ao portal da Azure**
+   - Abertura do portal em https://portal.azure.com
+   - Login com conta Microsoft
 
-- Conta ativa na Microsoft Azure
-- Navegador atualizado
-- Conexão com a internet
+2. **Criação do recurso de banco de dados**
+   - Navegar até "Criar um recurso" > "Banco de Dados SQL"
+   - Escolher assinatura e grupo de recursos
 
-## 🛠️ Etapas do Processo
+3. **Configuração da instância**
+   - Nome do banco de dados
+   - Criar um novo servidor com nome, região e credenciais
+   - Selecionar camada de preço (por exemplo, gratuita para testes)
 
-### 1. Acesso ao Portal da Azure
+4. **Configurações adicionais**
+   - Configuração de regras de firewall para permitir acesso
+   - Configurações de backup e redundância
+   - Monitoramento e logs
 
-- Acesse [https://portal.azure.com](https://portal.azure.com)
-- Faça login com sua conta Microsoft
+5. **Revisão e criação**
+   - Validação das configurações e provisionamento do serviço
 
-📸 Imagem: `imagens/01-portal-azure-login.png`
+6. **Acesso e testes**
+   - Conexão ao banco via Azure Data Studio, Visual Studio Code ou string de conexão
 
----
+## ❗ Observação Importante
 
-### 2. Criação de um Recurso de Banco de Dados
+Durante a execução do desafio, **não foi possível concluir a criação da instância na Azure devido a bloqueios de acesso da plataforma (link de suporte: https://go.microsoft.com/fwlink/?linkid=2317517)**. Mesmo com tentativas via diferentes navegadores, redes e dispositivos, o acesso foi recusado por medidas de segurança automatizadas da Microsoft.
 
-- No menu lateral, clique em "Criar um recurso"
-- Selecione "Banco de dados" > "Banco de dados SQL"
+Apesar disso, toda a sequência de criação da instância foi estudada com base nas aulas e na documentação oficial da Azure, sendo compreendida e descrita neste material.
 
-📸 Imagem: `imagens/02-criar-recurso-banco.png`
+## 📌 Conclusão
 
----
+Este repositório cumpre o objetivo de documentar o processo de criação de uma instância de banco de dados na Azure, mesmo sem acesso prático completo, reforçando:
 
-### 3. Configuração da Instância
-
-- Nome da instância
-- Nome do servidor
-- Autenticação
-- Região
-- Camada de preço
-
-📸 Imagem: `imagens/03-configuracao-inicial.png`
-
----
-
-### 4. Regras de Firewall e Conexão
-
-- Permitir acesso ao IP atual
-- Testar conexão via Azure Data Studio ou Visual Studio Code
-
-📸 Imagem: `imagens/04-configurar-firewall.png`
-
----
-
-### 5. Finalização e Validação
-
-- Verificar status da instância
-- Acessar painel de gerenciamento
-
-📸 Imagem: `imagens/05-instancia-criada.png`
-
----
-
-## 📝 Observações
-
-- A camada gratuita permite testar recursos limitados do banco
-- Para produção, considere segurança avançada e escalabilidade
-- Documente os dados de acesso com segurança
-
+- A estrutura das etapas envolvidas
+- O uso de boas práticas de documentação
+- A importância de registrar dificuldades técnicas como parte da experiência
 
 ## 🎓 Projeto Acadêmico
 
